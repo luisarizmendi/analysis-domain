@@ -5,6 +5,7 @@ import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;
 /**
  * Custom Jackson deserializer for PlaceOrderCommands
  */
+@RegisterForReflection
 public class PlaceOrderCommandDeserializer extends ObjectMapperDeserializer<PlaceOrderCommand> {
 
     public PlaceOrderCommandDeserializer() {

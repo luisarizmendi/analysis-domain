@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.time.Instant;
 
-
 @ApplicationScoped
 public class VirusExecution {
 

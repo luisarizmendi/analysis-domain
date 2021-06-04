@@ -1,4 +1,4 @@
-package org.larizmen.analysis.core;
+package org.larizmen.analysis.domain;
 
 import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;
 import org.larizmen.analysis.domain.ProcessTicket;

@@ -14,12 +14,15 @@ import java.time.Instant;
 
 @RegisterForReflection
 public class PlaceOrderCommand {
-
     List<OrderLineItem> regularLineItems;
     List<OrderLineItem> virusLineItems;
-    private String id;
-    private String patientId;
-    private final Instant timestamp;
+    String id;
+    String patientId;
+    Instant timestamp;
+
+    public PlaceOrderCommand() {
+    }
+
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public PlaceOrderCommand(

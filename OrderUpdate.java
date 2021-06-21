@@ -3,6 +3,9 @@ package org.larizmen.analysis.domain;
 import java.util.Optional;
 import java.util.StringJoiner;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
+@RegisterForReflection
 public class OrderUpdate {
 
   public final String orderId;

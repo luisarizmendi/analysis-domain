@@ -8,11 +8,15 @@ import java.util.StringJoiner;
 @RegisterForReflection
 public class OrderTicket {
 
-    private final String orderId;
-    private final String lineItemId;
-    private final String item;
-    private final String name;
-    private final Instant timestamp;
+    String orderId;
+    String lineItemId;
+    String item;
+    String name;
+    Instant timestamp;
+
+    public OrderTicket() {
+        
+    }
 
     public OrderTicket(String orderId, String lineItemId, String item, String name) {
         this.orderId = orderId;
